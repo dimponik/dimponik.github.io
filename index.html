@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Обзоры фильмов</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Крутое описание, прям как надо" />
+		<meta name="Keywords" content="Фильмы, деньги, видео, эссе, разбор"> 
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="header-back">
+				<img class="responsive-img" src="res/orig 1.png">
+				<div class="title-header">
+					Разбор творчества  кино-режиссёров в  видео-эссе
+				</div>
+				<div class="navigation-menu">
+					<a href="#proj" class="nav-element">наши проекты</a>
+					<a href="#sched" class="nav-element">расписание</a>
+					<a href="#ab" class="nav-element">о нас</a>
+					<a href="#them" class="nav-element">темы следующих роликов</a>
+				</div>
+			</div>	
+		</div>
+		<div class="title-proj" id="proj">
+			Наши проекты
+		</div>
+		<div class="sim-slider" id = "slider">
+			  <ul class="sim-slider-list">
+			    <li><img src="res/Group 2.png" alt="screen"></li> <!-- это экран -->
+			    <li class="sim-slider-element"><img  src="res/Group 1.png" alt="1"></li>
+			    <li class="sim-slider-element"><img  src="res/Group 2 (5).png" alt="2"></li>
+			    <li class="sim-slider-element"><img  src="res/Group 2 (2).png" alt="3"></li>
+			    <li class="sim-slider-element"><img  src="res/Group 2 (3).png" alt="4"></li>
+			    <li class="sim-slider-element"><img  src="res/Group 2 (4).png" alt="5"></li>
+			  </ul>
+			  <div class="sim-slider-arrow-left"></div>
+			  <div class="sim-slider-arrow-right"></div>
+			  <div class="sim-slider-dots"></div>
+		</div>
+
+		<div class="schedule" id="sched">
+			<div class="schedule-title">
+				Расписание
+			</div>
+			<div class="schedule-content">
+				<div class="schedule-text">
+					<div class="text-element">
+						- 4 ноября: “какие фильмы произвели наибольшее впечтление на Стэнли кубрика“
+					</div>
+					<div class="text-element">
+						- 7 ноября: “что скрывается под добродушной маской MARVEL“
+					</div>
+					<div class="text-element">
+						- 15 ноября: “почему фильм крёстный отец и по сей день является культовым ?“
+					</div>
+				</div>
+
+				<div class="schedule-calendar">
+					<form>
+						<input type="Date" name="calendar">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="about" id="ab">
+			<div class="about-title">
+				О нас
+			</div>
+			<div class="about-content">
+				<div class="about-text">
+					<div class="about-element">
+						Наш офис находится в Челибнской области г. Челябинске  ул. Карпинского 86
+					</div>
+				</div>
+
+				<div class="about-map">
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe width=auto height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%B3.%20%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B5%20%20%D1%83%D0%BB.%20%D0%9A%D0%B0%D1%80%D0%BF%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2086&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							</iframe>
+							<a href="https://embedgooglemap.net/mapv2/"></a>
+						</div>
+						<style>
+							.mapouter{
+								position:relative;
+								text-align:right;
+								height:500px;
+								width:600px;
+							}
+							.gmap_canvas {
+								overflow:hidden;
+								background:none!important;
+								height:500px;
+								width:600px;
+							}
+						</style>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="themes-form" id="them">
+			<div class="title-form">
+				Темы следующих роликов
+			</div>
+			<div class="form-block">
+				<div class="title-theme">
+					Тема
+				</div>
+				<textarea class="theme" name="theme" rows="3" cols="70">
+
+				</textarea>
+				<div class="title-desc">
+					Описание
+				</div>
+				<textarea class="desc" name="desc" rows="14" cols="70">
+
+				</textarea>
+				<input class="btn" type="submit" name="sub" value="Отправить">
+			</div>
+			<div class="text-block">
+				Оставляйте ваши предложения на тему будущих роликов
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="text-footer">
+				Created by CinemaGroup
+			</div>
+			<div class=" logos-footer">
+				<a href="" class="logo"><img src="res/social-003_twitter 2.png"></a>
+				<a href="" class="logo"><img src="res/social-038_instagram 1.png"></a>
+				<a href="" class="logo"><img src="res/social-067_gmail 1.png"></a>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function Sim(sldrId) {
+
+				let id = document.getElementById(sldrId);
+				if(id) {
+					this.sldrRoot = id
+				}
+				else {
+					this.sldrRoot = document.querySelector('.sim-slider')
+				};
+
+				// Carousel objects
+				this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
+				this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
+				this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
+				this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
+				this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
+				this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+
+				// Initialization
+				this.options = Sim.defaults;
+				Sim.initialize(this)
+			};
+
+			Sim.defaults = {
+
+				// Default options for the carousel
+				loop: true,     // Бесконечное зацикливание слайдера
+				auto: true,     // Автоматическое пролистывание
+				interval: 5000, // Интервал между пролистыванием элементов (мс)
+				arrows: true,   // Пролистывание стрелками
+				dots: true      // Индикаторные точки
+			};
+
+			Sim.prototype.elemPrev = function(num) {
+				num = num || 1;
+
+				let prevElement = this.currentElement;
+				this.currentElement -= num;
+				if(this.currentElement < 0) this.currentElement = this.elemCount-1;
+
+				if(!this.options.loop) {
+					if(this.currentElement == 0) {
+						this.leftArrow.style.display = 'none'
+					};
+					this.rightArrow.style.display = 'block'
+				};
+				
+				this.sldrElements[this.currentElement].style.opacity = '1';
+				this.sldrElements[prevElement].style.opacity = '0';
+
+				if(this.options.dots) {
+					this.dotOn(prevElement); this.dotOff(this.currentElement)
+				}
+			};
+
+			Sim.prototype.elemNext = function(num) {
+				num = num || 1;
+				
+				let prevElement = this.currentElement;
+				this.currentElement += num;
+				if(this.currentElement >= this.elemCount) this.currentElement = 0;
+
+				if(!this.options.loop) {
+					if(this.currentElement == this.elemCount-1) {
+						this.rightArrow.style.display = 'none'
+					};
+					this.leftArrow.style.display = 'block'
+				};
+
+				this.sldrElements[this.currentElement].style.opacity = '1';
+				this.sldrElements[prevElement].style.opacity = '0';
+
+				if(this.options.dots) {
+					this.dotOn(prevElement); this.dotOff(this.currentElement)
+				}
+			};
+
+			Sim.prototype.dotOn = function(num) {
+				this.indicatorDotsAll[num].style.cssText = 'background-color:#C4C4C4; cursor:pointer;'
+			};
+
+			Sim.prototype.dotOff = function(num) {
+				this.indicatorDotsAll[num].style.cssText = 'background-color:#AC7878; cursor:default;'
+			};
+
+			Sim.initialize = function(that) {
+
+				// Constants
+				that.elemCount = that.sldrElements.length; // Количество элементов
+
+				// Variables
+				that.currentElement = 0;
+				let bgTime = getTime();
+
+				// Functions
+				function getTime() {
+					return new Date().getTime();
+				};
+				function setAutoScroll() {
+					that.autoScroll = setInterval(function() {
+						let fnTime = getTime();
+						if(fnTime - bgTime + 10 > that.options.interval) {
+							bgTime = fnTime; that.elemNext()
+						}
+					}, that.options.interval)
+				};
+
+				// Start initialization
+				if(that.elemCount <= 1) {   // Отключить навигацию
+					that.options.auto = false; that.options.arrows = false; that.options.dots = false;
+					that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+				};
+				if(that.elemCount >= 1) {   // показать первый элемент
+					that.sldrElemFirst.style.opacity = '1';
+				};
+
+				if(!that.options.loop) {
+					that.leftArrow.style.display = 'none';  // отключить левую стрелку
+					that.options.auto = false; // отключить автопркрутку
+				}
+				else if(that.options.auto) {   // инициализация автопрокруки
+					setAutoScroll();
+					// Остановка прокрутки при наведении мыши на элемент
+					that.sldrList.addEventListener('mouseenter', function() {clearInterval(that.autoScroll)}, false);
+					that.sldrList.addEventListener('mouseleave', setAutoScroll, false)
+				};
+
+				if(that.options.arrows) {  // инициализация стрелок
+					that.leftArrow.addEventListener('click', function() {
+						let fnTime = getTime();
+						if(fnTime - bgTime > 1000) {
+							bgTime = fnTime; that.elemPrev()
+						}
+					}, false);
+					that.rightArrow.addEventListener('click', function() {
+						let fnTime = getTime();
+						if(fnTime - bgTime > 1000) {
+							bgTime = fnTime; that.elemNext()
+						}
+					}, false)
+				}
+				else {
+					that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+				};
+
+				if(that.options.dots) {  // инициализация индикаторных точек
+					let sum = '', diffNum;
+					for(let i=0; i<that.elemCount; i++) {
+						sum += '<span class="sim-dot"></span>'
+					};
+					that.indicatorDots.innerHTML = sum;
+					that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sim-dot');
+					// Назначаем точкам обработчик события 'click'
+					for(let n=0; n<that.elemCount; n++) {
+						that.indicatorDotsAll[n].addEventListener('click', function() {
+							diffNum = Math.abs(n - that.currentElement);
+							if(n < that.currentElement) {
+								bgTime = getTime(); that.elemPrev(diffNum)
+							}
+							else if(n > that.currentElement) {
+								bgTime = getTime(); that.elemNext(diffNum)
+							}
+							// Если n == that.currentElement ничего не делаем
+						}, false)
+					};
+					that.dotOff(0);  // точка[0] выключена, остальные включены
+					for(let i=1; i<that.elemCount; i++) {
+						that.dotOn(i)
+					}
+				}
+			};
+
+			new Sim();
+		</script>
+		<script>new Sim("slider");</script>
+	</body>
+
+</html>
